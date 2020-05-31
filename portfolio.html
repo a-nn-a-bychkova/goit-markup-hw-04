@@ -38,12 +38,23 @@
         <address class="contact-info">
           <ul class="contacts-header list">
             <li class="item">
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-header__link link"
+              >
+                <svg class="icon-envelope">
+                  <use href="./images/symbol-defs-2.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <li class="phone-item item">
+              <a href="tel:+380961111111" class="contacts-header__link link">
+                <svg class="icon-phone">
+                  <use href="./images/symbol-defs-2.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
         </address>
@@ -269,34 +280,60 @@
               class="googlemaps link"
               >г. Киев, пр-т Леси Украинки, 26</a
             ><br />
-            <a href="mailto:info@example.com" class="information mail link"
+            <a href="mailto:info@example.com" class="contacts__email link"
               >info@example.com</a
             ><br />
-            <a href="tel:+380991111111" class="information link"
+            <a href="tel:+380991111111" class="contacts__info link"
               >+38 099 111 11 11</a
             >
           </address>
         </div>
         <div class="join-container">
           <b class="join-text upper"> Присоединяйтесь</b>
-          <ul class="list">
-            <li class="item">
-              <a href="" aria-label="Ссылка на Instagram" class="link"
-                >Instagram</a
+          <ul class="social-links list">
+            <li class="social-media__item">
+              <a
+                href=""
+                aria-label="Ссылка на Instagram"
+                class="social-media__link social-media__link--inverse social-media__link--inverse link"
               >
+                <svg class="social-media__logo social-media__logo--inverse">
+                  <use href="./images/symbol-defs-2.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на Twitter" class="link">Twitter</a>
-            </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на Facebook" class="link"
-                >Facebook</a
+            <li class="social-media__item">
+              <a
+                href=""
+                aria-label="Ссылка на Twitter"
+                class="social-media__link social-media__link--inverse link"
               >
+                <svg class="social-media__logo social-media__logo--inverse">
+                  <use href="./images/symbol-defs-2.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на LinkedIn" class="link"
-                >LinkedIn</a
+            <li class="social-media__item">
+              <a
+                href=""
+                aria-label="Ссылка на Facebook"
+                class="social-media__link social-media__link--inverse link"
               >
+                <svg class="social-media__logo social-media__logo--inverse">
+                  <use href="./images/symbol-defs-2.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a
+                href=""
+                aria-label="Ссылка на LinkedIn"
+                class="social-media__link social-media__link--inverse link"
+              >
+                <svg class="social-media__logo social-media__logo--inverse">
+                  <use href="./images/symbol-defs-2.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -304,7 +341,12 @@
           <b class="subscribe-title upper">
             Подпишитесь на рассылку
           </b>
-          <button type="button" class="centered">Подписаться</button>
+          <button type="button" class="centered">
+            Подписаться
+            <svg class="icon-subscribe">
+              <use href="./images/symbol-defs-2.svg#icon-subscribe"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <div class="copyright">

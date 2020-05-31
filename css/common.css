@@ -207,8 +207,37 @@ h6 p {
   display: flex;
 }
 
+.contacts-header__link {
+  display: flex;
+  align-items: center;
+
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.contacts-header__link:hover,
+.contacts-header__link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .contacts-header .item + .item {
   margin-left: 30px;
+}
+
+.icon-envelope {
+  margin-right: 10px;
+  fill: inherit;
+  width: 16px;
+  height: 11.2px;
+}
+
+.icon-phone {
+  margin-right: 10px;
+  fill: inherit;
+  width: 10px;
+  height: 14.94px;
 }
 
 /*footer*/
@@ -253,15 +282,22 @@ h6 p {
   color: var(--primary-white-color);
 }
 
-.contacts .information {
+.contacts__email {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 2;
+  color: var(--footer-contacts);
+  margin-bottom: 9px;
+}
+
+.contacts__info {
   display: inline-block;
   font-weight: 400;
   line-height: 2;
   color: var(--footer-contacts);
 }
 
-.contacts > .mail {
-  display: inline-block;
+.contacts__email {
   margin-bottom: 9px;
 }
 
@@ -274,6 +310,47 @@ h6 p {
   margin-bottom: 21px;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social-media__link:hover {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.social-media__link--inverse {
+  fill: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-media__logo {
+  fill: inherit;
+  width: 20px;
+  height: 20px;
+}
+
+.social-media__logo--inverse {
+  fill: inherit;
+}
+
+.social-media__item + .social-media__item {
+  margin-left: 10px;
+}
+
 .subscribe {
   max-width: 570px;
 }
@@ -281,6 +358,13 @@ h6 p {
 .subscribe-title {
   display: block;
   margin-bottom: 21px;
+}
+
+.icon-subscribe {
+  margin-left: 10px;
+  fill: var(--primary-white-color);
+  width: 24px;
+  height: 24px;
 }
 
 footer button {
